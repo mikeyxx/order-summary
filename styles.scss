@@ -10,8 +10,6 @@ $Dark-blue: hsl(223, 47%, 23%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Red Hat Display' sans-serif;
-    line-height: 1.5;
 }
 
 img {
@@ -32,6 +30,8 @@ body {
     background-color: $Pale-blue;
     text-align: center;
     padding-top: 4rem;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.5;
 }
 
 h2 {
