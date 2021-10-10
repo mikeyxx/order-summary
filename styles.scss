@@ -1,0 +1,130 @@
+// Define color variable
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+// Global rules
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display' sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    font-size: 16px;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: $Pale-blue;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+h1 {
+    margin-top: 1.5rem;
+}
+
+.container {
+    width: 20rem;
+    margin:auto;
+    .main {
+        background-color: white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+       
+}
+
+.img{
+    max-width: 20rem;
+    max-height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.plan {
+    display: flex;
+    background: $Very-pale-blue;
+    max-width: 18rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1.8rem 0 1.8rem 0;
+    .chg {
+        margin-inline-start: 3.5rem;
+        align-self: center;
+    }
+    .music-icon {
+        margin-inline-end: 1rem;
+    }
+}
+
+.chg:hover {
+    color: hsl(245, 78%, 64%);
+    text-decoration: none;
+}
+
+.button {
+    width: 16rem;
+    padding: 0.5rem;
+    background-color: $Bright-blue;
+    color: white;
+    margin-bottom: 1.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3px);
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    background-color: hsl(245, 78%, 64%);
+}
+
+.cancel {
+    margin-bottom: 1.9rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.cancel:hover {
+    color: red;
+}
+
+.attribution {
+    margin-top: 1.7rem;
+}
+
+//For Desktop view
+
+@media only screen and (min-width:700px) {
+    body {
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-color: $Pale-blue;
+    }
+        
+}
