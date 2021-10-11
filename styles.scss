@@ -44,7 +44,7 @@ h1 {
 }
 
 .container {
-    width: 22rem;
+    max-width: 22rem;
     margin:auto;
     .main {
         background-color: white;
@@ -67,8 +67,8 @@ h1 {
 
 .plan {
     display: flex;
+    flex-wrap: wrap;
     background: $Very-pale-blue;
-    max-width: 19rem;
     padding: 1rem;
     border-radius: .5rem;
     margin: 1.8rem 0 1.8rem 0;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .button {
-    width: 16rem;
+    max-width: 16rem;
     padding: 0.5rem;
     background-color: $Bright-blue;
     color: white;
