@@ -37,7 +37,7 @@ h1 {
 }
 
 .container {
-  width: 22rem;
+  max-width: 22rem;
   margin: auto;
 }
 
@@ -70,8 +70,8 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   background: #f5f7ff;
-  max-width: 19rem;
   padding: 1rem;
   border-radius: .5rem;
   margin: 1.8rem 0 1.8rem 0;
@@ -96,7 +96,7 @@ h1 {
 }
 
 .button {
-  width: 16rem;
+  max-width: 16rem;
   padding: 0.5rem;
   background-color: #3829e0;
   color: white;
